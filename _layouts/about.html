@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ 'assets/css/bootstrap.min.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ 'assets/css/main.css' | relative_url }}">
+    <title>{{site.name}} | About Us</title>
+</head>
+<body>
+        <nav class="navbar navbar-expand-lg my-bg navbar-dark">
+
+                <a href="{{site.url}}" class="navbar-brand d-block d-lg-none floating-left"><img src="{{ 'assets/img/aammn_white.png' | relative_url }}" class="head-img-res img-fluid" alt=""></a>
+            
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#collpase_target">
+                        <span class="navbar-toggler-icon"></span>
+                </button>
+            
+            
+            
+                <div class="collapse navbar-collapse" id="collpase_target">
+            
+                <a href="{{site.url}}" class="navbar-brand d-none d-lg-block floating-left"><img src="{{ 'assets/img/aammn_white.png' | relative_url }}" class="head-img img-fluid" alt=""></a>
+            
+            
+                <ul class="navbar-nav ml-auto floating-right">
+                    <li class="nav-item">
+                        <a href="{{site.url}}" class="nav-link my-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{'about.html' | relative_url}}" class="nav-link my-link my-active">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{'related-publications.html' | relative_url}}" class="nav-link my-link">Related Publications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{'advisory-board.html' | relative_url}}" class="nav-link my-link">Advisory Board</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{'contact.html' | relative_url}}" class="nav-link my-link">Contact</a>
+                    </li>
+                </ul>
+            
+                </div>
+            </nav>
+            
+            <div class="bg-heading about-div">
+                <h2 class="float-in-down"> <span class="maroon">About </span> us</h2>
+            </div>
+            
+     
+        <div class="current">
+            <div class="row justify-content-center">
+                <div class="float-in-down col-sm-12 col-md-1 grey-bg d-none d-sm-none d-md-block d-lg-block d-xl-block"></div>
+                    <div class="float-in-down col-sm-12 col-md-10 current-card">
+
+                        <h3 class="float-in-down">AAMMN <span class="maroon">Story</span> <i class="fas fa-users"></i></h3>
+                        <p class="float-in-down">The AAMMN is designed to enhance and support the mathematics achievement outcomes for African American male students. One purpose is to build a strong coalition of African American male scholars who are equipped with the knowledge base to bolster their career trajectories in mathematics-related fields. Another purpose is to establish an anti-deficit network that positions African American male students as mathematically capable, resilient, and astute.   
+
+                                While there are efforts on many fronts to broaden participation in STEM fields, few efforts exist at the undergraduate level to support African American male students who have a desire to pursue careers in STEM fields. Using mathematics as the linchpin, this network provides support to African American male students. More specifically, the AAMMN is designed to share educational activities, disseminate information about related opportunities (research, internship, fellowship, job, etc.), publicize research about their experiences (educational, STEM, racial, cultural, etc.), and spur action regarding their persistence and representation in mathematics-intensive fields. 
+                                </p>
+
+                    </div>
+                <div class="float-in-down col-sm-12 col-md-1 maroon-bg d-none d-sm-none d-md-block d-lg-block d-xl-block"></div>
+            </div>
+        </div>
+
+
+
+
+
+    {% include footer.html %}
+
+
+    <script src="{{ 'assets/js/jquery.js' | relative_url }}"></script>
+    <script src="{{ 'assets/js/bootstrap.min.js' | relative_url }}"></script>
+    <script src="{{ 'assets/js/scrollreveal.min.js' | relative_url }}"></script>
+    <script src="{{ 'assets/js/main.js' | relative_url }}"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+.banner
+    width: 100%
+    background-image: url($baseurl + '/assets/img/home.jpg')
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: top center
+    background-attachment: fixed
+    text-align: center
+    padding-bottom: 100px
+    h1
+        font-size: 45px
+        font-weight: 1000
+        text-transform: uppercase      
+        margin-bottom: 50px
+        color: #cccccc
+    
+    
+.aammn-maroon
+    display: inline-block
+    margin-top: 150px
+    margin-bottom: 50px
+    width: 350px
+    height: 152px
+
+
+.learn-more
+    margin: auto
+    text-align: center
+    box-shadow: 1px 3px 3px 3px rgba(0,0,0,0.6)
+    padding: 0
+    line-height: 60px
+    display: block
+    width: 140px
+    height: 60px
+    background-color: $mainColor
+    color: #fff
+    transition-duration: 0.3s
+    &:hover
+        background-color: #ad0000
+        box-shadow: 3px 6px 3px 3px rgba(0,0,0,0.8)
+        text-decoration: none
+        color: #fff
+
+
+@media screen and (max-width:755px)
+    .banner
+        h1
+            font-size: 35px
+    .aammn-maroon
+        width: 260px
+        height: 113px
+        margin-bottom: 50px
+
+    .learn-more
+        width: 120px
+        height: 50px
+        line-height: 50px            
+
+@media screen and (max-width:460px)
+    .aammn-maroon
+        width: 200px
+        height: 87px
+        margin-top: 100px
+
+    .learn-more
+        width: 100px
+        height: 40px
+        line-height: 40px
+        font-size: 13px    

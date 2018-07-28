@@ -1,0 +1,21 @@
+.advisory-div
+    background-image: url($baseurl + '/assets/img/advisory.jpg')
+    
+.founder-txt, .advisory-board-txt
+    font-weight: 1000
+    text-transform: uppercase
+    font-size: 35px
+    color: #333
+    text-align: center
+.founder-txt
+    margin-top: 30px
+
+.advisory-board-txt
+    margin-bottom: 100px
+
+    .mugshot
+        +prefix-animation(float 6s ease-in-out infinite)
+
+@media screen and (max-width:755px)
+    .founder-txt, .advisory-board-txt
+        font-size: 30px

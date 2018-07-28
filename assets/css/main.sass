@@ -1,0 +1,64 @@
+---
+---
+
+$baseurl: "{{site.baseurl}}"
+$mainColor: #540000
+
+*
+    padding: 0
+    margin: 0
+body
+    overflow-x: hidden
+
+@mixin prefix-animation($parameters)
+    -webkit-animation : $parameters
+    -moz-animation    : $parameters
+    -ms-animation     : $parameters
+    animation         : $parameters
+
+@mixin prefix-transform($parameters)
+    -webkit-transform : $parameters
+    -moz-transform    : $parameters
+    -ms-transform     : $parameters
+    transform         : $parameters
+
+.christopher
+    background-image: url($baseurl + '/assets/img/team/christopher.jpg')
+    
+.christine            
+    background-image: url($baseurl + '/assets/img/team/christine.jpg')
+.duane
+    background-image: url($baseurl + '/assets/img/team/duane.jpg')
+.erica
+    background-image: url($baseurl + '/assets/img/team/erica.jpg')
+.jacqueline
+    background-image: url($baseurl + '/assets/img/team/jacqueline.jpg')
+.robert
+    background-image: url($baseurl + '/assets/img/team/robert.jpg')
+
+
+
+
+@import header   
+@import home     
+@import learn
+@import why
+@import current
+@import footer
+@import contact
+@import advisory
+
+
+
+@keyframes floats
+    0%
+        box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6)
+        +prefix-transform(translatey(0px))
+
+    50%
+        box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2)
+        +prefix-transform(translatey(-20px))
+
+    100%
+        box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6)
+        +prefix-transform(translatey(0px))

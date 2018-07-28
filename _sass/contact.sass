@@ -1,0 +1,104 @@
+.contact-div
+    background-image: url($baseurl + '/assets/img/contact.jpg')
+.bg-heading
+    min-height: 400px
+    background-color: #333
+    background-position: center center
+    background-attachment: fixed
+    background-size: cover
+    background-repeat: no-repeat
+    text-align: center
+
+    h2
+        display: inline-block
+        font-size: 45px
+        color: #cccccc
+        text-transform: uppercase
+        font-weight: 1000
+        margin-top: 150px
+
+    
+.publication-p
+    font-weight: 700
+    font-size: 15px !important
+    color: $mainColor !important    
+    
+.contact-p
+
+    font-size: 18px !important
+
+.contact-grid
+    min-height: 400px
+    padding-top: 100px
+
+.contact-person
+    width: 80%
+    margin: auto
+    margin-bottom: 100px
+    .mugshot
+        +prefix-animation(floats 6s ease-in-out infinite)
+        height: 100px
+        width: 100px
+        margin: auto
+        border-radius: 100%
+        background-color: #333
+        background-size: cover
+        background-repeat: no-repeat
+        background-position: top center
+        margin-bottom: 30px
+
+    h3
+        text-align: center
+        font-size: 25px
+        font-weight: 1000px
+        margin-bottom: 30px
+
+    p
+        text-align: center
+
+        text-align: center
+        font-size: 15px
+        margin-bottom: 30px
+
+
+.about-div
+    background-image: url('/assets/img/about.jpg')
+
+
+.contacts-form
+    padding-bottom: 100px
+    h3
+        font-size: 30px
+        text-align: center
+        font-weight: 1000
+        color: #333
+        text-transform: uppercase  
+        margin-bottom: 50px
+
+.related-publications-div
+    background-image: url("/assets/img/related-publications.jpg")
+
+.submit-button
+    margin: auto
+    text-align: center
+    box-shadow: 1px 3px 3px 3px rgba(0,0,0,0.6)
+    padding: 0
+    border: none
+    line-height: 40px
+    width: 100px
+    height: 40px
+    background-color: $mainColor
+    color: #fff
+    transition-duration: 0.3s
+    &:hover
+        background-color: #ad0000
+        box-shadow: 3px 6px 3px 3px rgba(0,0,0,0.8)
+        text-decoration: none
+        color: #fff          
+
+@media screen and (max-width:755px)
+    .bg-heading
+        h2
+            font-size: 35px
+
+     

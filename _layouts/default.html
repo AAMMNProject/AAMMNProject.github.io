@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ 'assets/css/bootstrap.min.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ 'assets/css/main.css' | relative_url }}">
+    <title>Welcome to {{site.name}}</title>
+</head>
+<body>
+    {% include header.html %}
+    {% include home.html %}
+    {% include learn.html %}
+    {% include why.html %}
+    {% include current.html %}
+    {% include footer.html %}
+
+
+    <script src="{{ 'assets/js/jquery.js' | relative_url }}"></script>
+    <script src="{{ 'assets/js/bootstrap.min.js' | relative_url }}"></script>
+    <script src="{{ 'assets/js/scrollreveal.min.js' | relative_url }}"></script>
+    <script src="{{ 'assets/js/main.js' | relative_url }}"></script>
+
+
+</body>
+</html>
