@@ -1,80 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="{{ 'assets/css/bootstrap.min.css' | relative_url }}">
     <link rel="stylesheet" href="{{ 'assets/css/main.css' | relative_url }}">
+    <link rel="icon shortcut" href="{{ 'assets/img/aammn-main.png' | relative_url }}" type="image/png">
     <title>{{site.name}} | Publications</title>
 </head>
+
 <body>
-        <nav class="navbar navbar-expand-lg my-bg navbar-dark">
+    <nav class="navbar navbar-expand-lg my-bg navbar-dark">
 
-                <a href="{{site.url}}" class="navbar-brand d-block d-lg-none floating-left"><img src="{{ 'assets/img/aammn_white.png' | relative_url }}" class="head-img-res img-fluid" alt=""></a>
-            
-                <button class="navbar-toggler" data-toggle="collapse" data-target="#collpase_target">
-                        <span class="navbar-toggler-icon"></span>
-                </button>
-            
-            
-            
-                <div class="collapse navbar-collapse" id="collpase_target">
-            
-                <a href="{{site.url}}" class="navbar-brand d-none d-lg-block floating-left"><img src="{{ 'assets/img/aammn_white.png' | relative_url }}" class="head-img img-fluid" alt=""></a>
-            
-            
-                <ul class="navbar-nav ml-auto floating-right">
-                    <li class="nav-item">
-                        <a href="{{site.url}}" class="nav-link my-link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="{{'about.html' | relative_url}}" class="nav-link my-link">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="{{'related-publications.html' | relative_url}}" class="nav-link my-link my-active">Related Publications</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="{{'advisory-board.html' | relative_url}}" class="nav-link my-link">Advisory Board</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="{{'contact.html' | relative_url}}" class="nav-link my-link">Contact</a>
-                    </li>
-                </ul>
-            
-                </div>
-            </nav>
+        <a href="{{site.url}}" class="navbar-brand d-block d-lg-none floating-left">
+            <img src="{{ 'assets/img/aammn_white.png' | relative_url }}" class="head-img-res img-fluid" alt="">
+        </a>
 
-            <div class="bg-heading related-publications-div">
-                <h2 class="float-in-down"> <span class="maroon">Related </span>Publications</h2>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#collpase_target">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+
+        <div class="collapse navbar-collapse" id="collpase_target">
+
+            <a href="{{site.url}}" class="navbar-brand d-none d-lg-block floating-left">
+                <img src="{{ 'assets/img/aammn_white.png' | relative_url }}" class="head-img img-fluid" alt="">
+            </a>
+
+
+            <ul class="navbar-nav ml-auto floating-right">
+                <li class="nav-item">
+                    <a href="{{site.url}}" class="nav-link my-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{'about.html' | relative_url}}" class="nav-link my-link">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{'related-publications.html' | relative_url}}" class="nav-link my-link my-active">Related Publications</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{'advisory-board.html' | relative_url}}" class="nav-link my-link">Advisory Board</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{'contact.html' | relative_url}}" class="nav-link my-link">Contact</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <div class="bg-heading related-publications-div">
+        <h2 class="float-in-down">
+            <span class="maroon">Related </span>Publications</h2>
+    </div>
+
+    <div class="container learn-contain">
+        <div class="row justify-content-between" id="learn-send-here">
+            <div class="col-xl-5  col-sm-12 col-md-5 learn-card">
+                <h3 class="floating-left">HBCUs propel African American male mathematics majors.</h3>
+                <p class="publication-p floating-left">Published by: Jett, C. C. (2013). </p>
+                <p class="floating-left">While researchers have examined the educational experiences of African American male students at historically
+                    black colleges and universities (HBCUs), researchers have neglected to adequately hone in on the mathematics
+                    experiences of African American male students at these institutions.
+                    <a href="https://link.springer.com/article/10.1007/s12111-011-9194-x" target="_blank" class="p-links">Read more here.</a>
+                </p>
             </div>
-            
-            <div class="container learn-contain">
-                <div class="row justify-content-between" id="learn-send-here">
-                    <div class="col-xl-5  col-sm-12 col-md-5 learn-card">
-                        <h3 class="floating-left">Lorem, ipsum dolor.</h3>
-                        <p class="publication-p floating-left">Published by: John Doe</p>
-                        <p class="floating-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis dolorem reprehenderit, cumque dolor iure non sed consequuntur adipisci officiis ratione tenetur perspiciatis expedita repellat laudantium aliquam hic at necessitatibus laborum deserunt beatae eveniet, minus et incidunt. Ducimus, repellendus similique culpa eos odit nulla quae numquam. Necessitatibus doloremque at esse repellat!</p>
-                    </div>
-                    <div class="col-xl-5 col-sm-12 col-md-5 learn-card">
-                        <h3 class="floating-right">Lorem, ipsum dolor.</h3>    
-                        <p class="publication-p floating-left">Published by: John Doe</p>                        
-                        <p class="floating-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor quisquam voluptas cum veritatis, qui delectus iure alias culpa, maiores sunt ipsum! Voluptas maxime libero pariatur distinctio dignissimos molestiae voluptate inventore, nesciunt omnis molestias, necessitatibus ipsam doloremque. Asperiores fuga est, quae deleniti, eaque temporibus nihil cum alias aliquid laborum ipsum dolorem!</p>
-                    </div>
-                    <div class="col-xl-5  col-sm-12 col-md-5 learn-card">
-                            <h3 class="floating-left">Lorem, ipsum dolor.</h3>
-                            <p class="publication-p floating-left">Published by: John Doe</p>
-                            <p class="floating-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis dolorem reprehenderit, cumque dolor iure non sed consequuntur adipisci officiis ratione tenetur perspiciatis expedita repellat laudantium aliquam hic at necessitatibus laborum deserunt beatae eveniet, minus et incidunt. Ducimus, repellendus similique culpa eos odit nulla quae numquam. Necessitatibus doloremque at esse repellat!</p>
-                        </div>
-                        <div class="col-xl-5 col-sm-12 col-md-5 learn-card">
-                            <h3 class="floating-right">Lorem, ipsum dolor.</h3>    
-                            <p class="publication-p floating-left">Published by: John Doe</p>                        
-                            <p class="floating-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor quisquam voluptas cum veritatis, qui delectus iure alias culpa, maiores sunt ipsum! Voluptas maxime libero pariatur distinctio dignissimos molestiae voluptate inventore, nesciunt omnis molestias, necessitatibus ipsam doloremque. Asperiores fuga est, quae deleniti, eaque temporibus nihil cum alias aliquid laborum ipsum dolorem!</p>
-                        </div>                    
-                </div>
+            <div class="col-xl-5 col-sm-12 col-md-5 learn-card">
+                <h3 class="floating-right">You Would Not Believe What I Have to Go Through to Prove My Intellectual Value!</h3>
+                <p class="publication-p floating-left">Published by: McGee, E. O., & Martin, D. B. (2011b).</p>
+                <p class="floating-right">Stereotype management is introduced to explain high achievement and resilience among 23 Black mathematics
+                    and engineering college students.
+                    <a href="http://journals.sagepub.com/doi/abs/10.3102/0002831211423972" target="_blank" class="p-links">Read more here. </a>
+                </p>
+            </div>
+            <div class="col-xl-5  col-sm-12 col-md-5 learn-card">
+                <h3 class="floating-left">Assume the Position . . . You Fit the Description.</h3>
+                <p class="publication-p floating-left">Published by: Smith, W. A., Allen, W. R., & Danley, L. L. (2007). </p>
+                <p class="floating-left">The present study examines the experiences of 36 Black male students, in focus group interviews, enrolled
+                    at Harvard University; Michigan State University; University of California, Berkeley; University of Illinois;
+                    and the University of Michigan. Two themes emerged: (a) anti-Black male stereotyping and marginality
+                    (or Black misandry), which caused (b) extreme hypersurveillance and control.
+                    <a href="http://journals.sagepub.com/doi/abs/10.1177/0002764207307742" target="_blank" class="p-links">Read more here. </a>
+                </p>
             </div>
 
+        </div>
+    </div>
+
+    <h2 class="founder-txt floating-left">
+        <span class="maroon">Books</span>
+    </h2>
+
+    <div class="container learn-contain">
+        <div class="row justify-content-between" id="learn-send-here">
+            <div class="col-xl-5 col-sm-12 col-md-5 learn-card">
+                <h3 class="floating-right">The African American Student’s Guide to STEM Careers.</h3>
+                <p class="publication-p floating-left">Published by: Robert T. Palmer and Alonzo Flowers.
+                </p>
+                <p class="floating-right">
+                    You can get this book by clicking
+                    <a href="https://www.amazon.com/African-American-Students-Guide-Careers/dp/1610697359/ref=sr_1_1?s=books&ie=UTF8&qid=1534430235&sr=1-1&keywords=African+American+guide+to+STEM+careers"
+                        target="_blank" class="p-links">here.</a>
+                </p>
+            </div>
+
+            <div class="col-xl-5 col-sm-12 col-md-5 learn-card">
+                <h3 class="floating-right">Beyond Banneker: Black Mathematicians and the Paths to Excellence.</h3>
+                <p class="publication-p floating-left">Published by: Erica N. Walker.
+                </p>
+                <p class="floating-right">
+                    You can get this book by clicking
+                    <a href="https://www.amazon.com/Beyond-Banneker-Black-Mathematicians-Excellence/dp/1438452160/ref=sr_1_1?s=books&ie=UTF8&qid=1534429891&sr=1-1&keywords=Beyond+Banneker%3A+Black+Mathematicians+and+the+Paths+to+Excellence
+                        " target="_blank" class="p-links">here.</a>
+                </p>
+            </div>
+
+            <div class="col-xl-5 col-sm-12 col-md-5 learn-card">
+                <h3 class="floating-right">The Brilliance of Black Children in Mathematics.</h3>
+                <p class="publication-p floating-left">Published by: Jacqueline Leonard and Danny Martin (Editors).
+
+                </p>
+                <p class="floating-right">
+                    You can get this book by clicking
+                    <a href="https://www.amazon.com/Brilliance-Black-Children-Mathematics/dp/1623960797/ref=sr_1_1?ie=UTF8&qid=1534429789&sr=8-1&keywords=The+Brilliance+of+Black+Children+in+Mathematics"
+                        target="_blank" class="p-links">here.</a>
+                </p>
+            </div>
+
+        </div>
+    </div>
 
 
 
@@ -88,4 +147,5 @@
 
 
 </body>
+
 </html>
